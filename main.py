@@ -19,3 +19,20 @@ run = True
 cubeSize = 20
 food = [random.randrange(1,500),random.randrange(1,500), 10, 10]
 Bfood = [random.randrange(1,500),random.randrange(1,500), 10, 10]
+
+while run:
+  window.fill(bg_color)
+  
+
+  keys = pygame.key.get_pressed()
+  if keys[pygame.K_UP]:
+    print("up")
+  if keys[pygame.K_DOWN]:
+    print("down")
+  if keys[pygame.K_LEFT]:
+    print("left")
+  if keys[pygame.K_RIGHT]:
+    print("right")
+    
+  pygame.display.update()
+  pygame.event.pump()
